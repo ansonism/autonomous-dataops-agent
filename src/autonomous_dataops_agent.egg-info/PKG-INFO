@@ -1,0 +1,110 @@
+Metadata-Version: 2.4
+Name: autonomous-dataops-agent
+Version: 0.1.0
+Summary: A safety-first DataOps control plane that observes data-platform health, diagnoses incidents, plans remediations, verifies proposed changes, requests approval, executes through adapters, validates outcomes, and supports rollback.
+Author: Anson Abraham
+License: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic<3,>=2.8
+Requires-Dist: PyYAML<7,>=6
+Requires-Dist: typer<1,>=0.12
+Requires-Dist: rich<15,>=13
+Provides-Extra: dev
+Requires-Dist: pytest<9,>=8; extra == "dev"
+Requires-Dist: pytest-cov<7,>=5; extra == "dev"
+Requires-Dist: ruff<1,>=0.6; extra == "dev"
+Requires-Dist: mypy<2,>=1.11; extra == "dev"
+Dynamic: license-file
+
+# Autonomous DataOps Agent
+
+    A safety-first DataOps control plane that observes data-platform health, diagnoses incidents, plans remediations, verifies proposed changes, requests approval, executes through adapters, validates outcomes, and supports rollback.
+
+    ## Why this exists
+
+    Coordinate specialized agents to reduce data-platform MTTR while preserving human control, change safety, evidence trails, idempotency, and rollback capability.
+
+    This repository is intentionally scaffolded as a **production-oriented agent project**, not a prompt-only demo. It starts with a deterministic mock provider so the complete orchestration path can be executed locally before adding any commercial LLM.
+
+    ## Core workflow
+
+    observe_and_detect -> triage_and_classify -> diagnose_with_specialists -> plan_remediation -> verify_plan_and_simulate -> risk_score_and_gate -> request_human_approval -> execute_via_controlled_adapter -> validate_outcome -> rollback_if_required -> record_incident_and_learning
+
+    ## Specialized agents
+
+    - `observer`
+- `incident_commander`
+- `rca_agent`
+- `data_quality_specialist`
+- `schema_specialist`
+- `lineage_specialist`
+- `security_guard`
+- `remediation_planner`
+- `change_verifier`
+- `execution_controller`
+- `validation_agent`
+
+    ## Planned tool adapters
+
+    - `alert_reader`
+- `log_reader`
+- `metric_reader`
+- `orchestrator_adapter`
+- `git_adapter`
+- `data_platform_adapter`
+- `approval_gateway`
+- `audit_writer`
+
+    ## Quick start
+
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    pip install -e ".[dev]"
+    autonomous-dataops run examples/sample_input.json --output out/result.json
+    pytest
+    ```
+
+    Or:
+
+    ```bash
+    make setup
+    make demo
+    make test
+    ```
+
+    ## Safety defaults
+
+    - Mock/dry-run behavior is the default.
+    - External systems are accessed only through explicit adapters.
+    - No production mutation should be added without an approval gate.
+    - Facts, assumptions, hypotheses and recommendations should remain distinguishable in outputs.
+    - Credentials must come from environment/secret stores, never source control.
+
+    ## Codex implementation guide
+
+    Start with [`SKILL.md`](./SKILL.md). It defines the mission, architecture, implementation sequence, acceptance criteria and guardrails Codex should follow.
+
+    ## Repository layout
+
+    ```text
+    .
+    ├── AGENTS.md
+    ├── SKILL.md
+    ├── config/
+    ├── docs/
+    ├── evals/
+    ├── examples/
+    ├── kubernetes/
+    ├── prompts/
+    ├── scripts/
+    ├── src/autonomous_dataops/
+    ├── terraform/
+    └── tests/
+    ```
+
+    ## Current state
+
+    **Phase 0 scaffold.** The harness runs end-to-end with a mock provider. `SKILL.md` instructs Codex how to build the real provider adapters, domain agents, tools, evals and production controls.

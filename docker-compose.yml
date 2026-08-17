@@ -1,0 +1,9 @@
+services:
+  agent:
+    build: .
+    command: ["run", "examples/sample_input.json", "--output", "/workspace/out/result.json"]
+    volumes:
+      - ./examples:/app/examples:ro
+      - ./out:/workspace/out
+    environment:
+      APP_ENV: local

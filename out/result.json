@@ -1,0 +1,506 @@
+{
+  "schema_version": 1,
+  "run_id": "e20e3c41-3e05-49f8-b04c-d71512aea04a",
+  "project": "autonomous-dataops-agent",
+  "started_at": "2026-08-17T15:41:28.586904Z",
+  "updated_at": "2026-08-17T15:41:28.920320Z",
+  "incident": {
+    "case_id": "demo-001",
+    "title": "Starter demo for Autonomous DataOps Agent",
+    "description": "Coordinate specialized agents to reduce data-platform MTTR while preserving human control, change safety, evidence trails, idempotency, and rollback capability.",
+    "constraints": [
+      "Use mock provider",
+      "No external credentials",
+      "Dry-run only"
+    ],
+    "evidence": [
+      {
+        "id": "ev-1",
+        "type": "user_supplied",
+        "summary": "Example evidence placeholder",
+        "reference": null
+      }
+    ]
+  },
+  "execution": {
+    "dry_run": true,
+    "provider": "mock"
+  },
+  "stages": [
+    {
+      "stage": "observe_and_detect",
+      "agent": "observer",
+      "summary": "Mock analysis: Project: autonomous-dataops-agent\nCase: demo-001\nStage: observe_and_detect\nEvidence count: 1\nProduce concise, evidence-oriented analysis.",
+      "evidence": [
+        {
+          "source": "user_supplied",
+          "summary": "Example evidence placeholder",
+          "reference": "ev-1"
+        }
+      ],
+      "findings": [
+        "Mock-mode stage completed: observe_and_detect"
+      ],
+      "assumptions": [
+        "No external-system state was queried in mock mode."
+      ],
+      "alternatives_considered": [
+        "Defer action until real adapters supply more evidence."
+      ],
+      "rationale": "Validated input was processed without external mutation.",
+      "risk": {
+        "severity": "LOW",
+        "probability": 0.1,
+        "impact_areas": [
+          "development"
+        ],
+        "mitigations": [
+          "Dry-run mode and provider-neutral mock execution."
+        ],
+        "residual_risk": "External conditions are not represented in mock mode.",
+        "approval_required": false,
+        "confidence": 1.0
+      },
+      "usage": {
+        "provider": "mock",
+        "model": "mock-v1",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "retry_count": 0
+      },
+      "completed_at": "2026-08-17T15:41:28.624228Z"
+    },
+    {
+      "stage": "triage_and_classify",
+      "agent": "incident_commander",
+      "summary": "Mock analysis: Project: autonomous-dataops-agent\nCase: demo-001\nStage: triage_and_classify\nEvidence count: 1\nProduce concise, evidence-oriented analysis.",
+      "evidence": [
+        {
+          "source": "user_supplied",
+          "summary": "Example evidence placeholder",
+          "reference": "ev-1"
+        }
+      ],
+      "findings": [
+        "Mock-mode stage completed: triage_and_classify"
+      ],
+      "assumptions": [
+        "No external-system state was queried in mock mode."
+      ],
+      "alternatives_considered": [
+        "Defer action until real adapters supply more evidence."
+      ],
+      "rationale": "Validated input was processed without external mutation.",
+      "risk": {
+        "severity": "LOW",
+        "probability": 0.1,
+        "impact_areas": [
+          "development"
+        ],
+        "mitigations": [
+          "Dry-run mode and provider-neutral mock execution."
+        ],
+        "residual_risk": "External conditions are not represented in mock mode.",
+        "approval_required": false,
+        "confidence": 1.0
+      },
+      "usage": {
+        "provider": "mock",
+        "model": "mock-v1",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "retry_count": 0
+      },
+      "completed_at": "2026-08-17T15:41:28.659429Z"
+    },
+    {
+      "stage": "diagnose_with_specialists",
+      "agent": "rca_agent",
+      "summary": "Mock analysis: Project: autonomous-dataops-agent\nCase: demo-001\nStage: diagnose_with_specialists\nEvidence count: 1\nProduce concise, evidence-oriented analysis.",
+      "evidence": [
+        {
+          "source": "user_supplied",
+          "summary": "Example evidence placeholder",
+          "reference": "ev-1"
+        }
+      ],
+      "findings": [
+        "Mock-mode stage completed: diagnose_with_specialists"
+      ],
+      "assumptions": [
+        "No external-system state was queried in mock mode."
+      ],
+      "alternatives_considered": [
+        "Defer action until real adapters supply more evidence."
+      ],
+      "rationale": "Validated input was processed without external mutation.",
+      "risk": {
+        "severity": "LOW",
+        "probability": 0.1,
+        "impact_areas": [
+          "development"
+        ],
+        "mitigations": [
+          "Dry-run mode and provider-neutral mock execution."
+        ],
+        "residual_risk": "External conditions are not represented in mock mode.",
+        "approval_required": false,
+        "confidence": 1.0
+      },
+      "usage": {
+        "provider": "mock",
+        "model": "mock-v1",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "retry_count": 0
+      },
+      "completed_at": "2026-08-17T15:41:28.688282Z"
+    },
+    {
+      "stage": "plan_remediation",
+      "agent": "remediation_planner",
+      "summary": "Mock analysis: Project: autonomous-dataops-agent\nCase: demo-001\nStage: plan_remediation\nEvidence count: 1\nProduce concise, evidence-oriented analysis.",
+      "evidence": [
+        {
+          "source": "user_supplied",
+          "summary": "Example evidence placeholder",
+          "reference": "ev-1"
+        }
+      ],
+      "findings": [
+        "Mock-mode stage completed: plan_remediation"
+      ],
+      "assumptions": [
+        "No external-system state was queried in mock mode."
+      ],
+      "alternatives_considered": [
+        "Defer action until real adapters supply more evidence."
+      ],
+      "rationale": "Validated input was processed without external mutation.",
+      "risk": {
+        "severity": "LOW",
+        "probability": 0.1,
+        "impact_areas": [
+          "development"
+        ],
+        "mitigations": [
+          "Dry-run mode and provider-neutral mock execution."
+        ],
+        "residual_risk": "External conditions are not represented in mock mode.",
+        "approval_required": false,
+        "confidence": 1.0
+      },
+      "usage": {
+        "provider": "mock",
+        "model": "mock-v1",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "retry_count": 0
+      },
+      "completed_at": "2026-08-17T15:41:28.715694Z"
+    },
+    {
+      "stage": "verify_plan_and_simulate",
+      "agent": "change_verifier",
+      "summary": "Mock analysis: Project: autonomous-dataops-agent\nCase: demo-001\nStage: verify_plan_and_simulate\nEvidence count: 1\nProduce concise, evidence-oriented analysis.",
+      "evidence": [
+        {
+          "source": "user_supplied",
+          "summary": "Example evidence placeholder",
+          "reference": "ev-1"
+        }
+      ],
+      "findings": [
+        "Mock-mode stage completed: verify_plan_and_simulate"
+      ],
+      "assumptions": [
+        "No external-system state was queried in mock mode."
+      ],
+      "alternatives_considered": [
+        "Defer action until real adapters supply more evidence."
+      ],
+      "rationale": "Validated input was processed without external mutation.",
+      "risk": {
+        "severity": "LOW",
+        "probability": 0.1,
+        "impact_areas": [
+          "development"
+        ],
+        "mitigations": [
+          "Dry-run mode and provider-neutral mock execution."
+        ],
+        "residual_risk": "External conditions are not represented in mock mode.",
+        "approval_required": false,
+        "confidence": 1.0
+      },
+      "usage": {
+        "provider": "mock",
+        "model": "mock-v1",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "retry_count": 0
+      },
+      "completed_at": "2026-08-17T15:41:28.738183Z"
+    },
+    {
+      "stage": "risk_score_and_gate",
+      "agent": "security_guard",
+      "summary": "Mock analysis: Project: autonomous-dataops-agent\nCase: demo-001\nStage: risk_score_and_gate\nEvidence count: 1\nProduce concise, evidence-oriented analysis.",
+      "evidence": [
+        {
+          "source": "user_supplied",
+          "summary": "Example evidence placeholder",
+          "reference": "ev-1"
+        }
+      ],
+      "findings": [
+        "Mock-mode stage completed: risk_score_and_gate"
+      ],
+      "assumptions": [
+        "No external-system state was queried in mock mode."
+      ],
+      "alternatives_considered": [
+        "Defer action until real adapters supply more evidence."
+      ],
+      "rationale": "Validated input was processed without external mutation.",
+      "risk": {
+        "severity": "LOW",
+        "probability": 0.1,
+        "impact_areas": [
+          "development"
+        ],
+        "mitigations": [
+          "Dry-run mode and provider-neutral mock execution."
+        ],
+        "residual_risk": "External conditions are not represented in mock mode.",
+        "approval_required": false,
+        "confidence": 1.0
+      },
+      "usage": {
+        "provider": "mock",
+        "model": "mock-v1",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "retry_count": 0
+      },
+      "completed_at": "2026-08-17T15:41:28.759864Z"
+    },
+    {
+      "stage": "request_human_approval",
+      "agent": "incident_commander",
+      "summary": "Mock analysis: Project: autonomous-dataops-agent\nCase: demo-001\nStage: request_human_approval\nEvidence count: 1\nProduce concise, evidence-oriented analysis.",
+      "evidence": [
+        {
+          "source": "user_supplied",
+          "summary": "Example evidence placeholder",
+          "reference": "ev-1"
+        }
+      ],
+      "findings": [
+        "Mock-mode stage completed: request_human_approval"
+      ],
+      "assumptions": [
+        "No external-system state was queried in mock mode."
+      ],
+      "alternatives_considered": [
+        "Defer action until real adapters supply more evidence."
+      ],
+      "rationale": "Validated input was processed without external mutation.",
+      "risk": {
+        "severity": "LOW",
+        "probability": 0.1,
+        "impact_areas": [
+          "development"
+        ],
+        "mitigations": [
+          "Dry-run mode and provider-neutral mock execution."
+        ],
+        "residual_risk": "External conditions are not represented in mock mode.",
+        "approval_required": false,
+        "confidence": 1.0
+      },
+      "usage": {
+        "provider": "mock",
+        "model": "mock-v1",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "retry_count": 0
+      },
+      "completed_at": "2026-08-17T15:41:28.782888Z"
+    },
+    {
+      "stage": "execute_via_controlled_adapter",
+      "agent": "execution_controller",
+      "summary": "Mock analysis: Project: autonomous-dataops-agent\nCase: demo-001\nStage: execute_via_controlled_adapter\nEvidence count: 1\nProduce concise, evidence-oriented analysis.",
+      "evidence": [
+        {
+          "source": "user_supplied",
+          "summary": "Example evidence placeholder",
+          "reference": "ev-1"
+        }
+      ],
+      "findings": [
+        "Mock-mode stage completed: execute_via_controlled_adapter"
+      ],
+      "assumptions": [
+        "No external-system state was queried in mock mode."
+      ],
+      "alternatives_considered": [
+        "Defer action until real adapters supply more evidence."
+      ],
+      "rationale": "Validated input was processed without external mutation.",
+      "risk": {
+        "severity": "LOW",
+        "probability": 0.1,
+        "impact_areas": [
+          "development"
+        ],
+        "mitigations": [
+          "Dry-run mode and provider-neutral mock execution."
+        ],
+        "residual_risk": "External conditions are not represented in mock mode.",
+        "approval_required": false,
+        "confidence": 1.0
+      },
+      "usage": {
+        "provider": "mock",
+        "model": "mock-v1",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "retry_count": 0
+      },
+      "completed_at": "2026-08-17T15:41:28.807561Z"
+    },
+    {
+      "stage": "validate_outcome",
+      "agent": "validation_agent",
+      "summary": "Mock analysis: Project: autonomous-dataops-agent\nCase: demo-001\nStage: validate_outcome\nEvidence count: 1\nProduce concise, evidence-oriented analysis.",
+      "evidence": [
+        {
+          "source": "user_supplied",
+          "summary": "Example evidence placeholder",
+          "reference": "ev-1"
+        }
+      ],
+      "findings": [
+        "Mock-mode stage completed: validate_outcome"
+      ],
+      "assumptions": [
+        "No external-system state was queried in mock mode."
+      ],
+      "alternatives_considered": [
+        "Defer action until real adapters supply more evidence."
+      ],
+      "rationale": "Validated input was processed without external mutation.",
+      "risk": {
+        "severity": "LOW",
+        "probability": 0.1,
+        "impact_areas": [
+          "development"
+        ],
+        "mitigations": [
+          "Dry-run mode and provider-neutral mock execution."
+        ],
+        "residual_risk": "External conditions are not represented in mock mode.",
+        "approval_required": false,
+        "confidence": 1.0
+      },
+      "usage": {
+        "provider": "mock",
+        "model": "mock-v1",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "retry_count": 0
+      },
+      "completed_at": "2026-08-17T15:41:28.834743Z"
+    },
+    {
+      "stage": "rollback_if_required",
+      "agent": "execution_controller",
+      "summary": "Mock analysis: Project: autonomous-dataops-agent\nCase: demo-001\nStage: rollback_if_required\nEvidence count: 1\nProduce concise, evidence-oriented analysis.",
+      "evidence": [
+        {
+          "source": "user_supplied",
+          "summary": "Example evidence placeholder",
+          "reference": "ev-1"
+        }
+      ],
+      "findings": [
+        "Mock-mode stage completed: rollback_if_required"
+      ],
+      "assumptions": [
+        "No external-system state was queried in mock mode."
+      ],
+      "alternatives_considered": [
+        "Defer action until real adapters supply more evidence."
+      ],
+      "rationale": "Validated input was processed without external mutation.",
+      "risk": {
+        "severity": "LOW",
+        "probability": 0.1,
+        "impact_areas": [
+          "development"
+        ],
+        "mitigations": [
+          "Dry-run mode and provider-neutral mock execution."
+        ],
+        "residual_risk": "External conditions are not represented in mock mode.",
+        "approval_required": false,
+        "confidence": 1.0
+      },
+      "usage": {
+        "provider": "mock",
+        "model": "mock-v1",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "retry_count": 0
+      },
+      "completed_at": "2026-08-17T15:41:28.857308Z"
+    },
+    {
+      "stage": "record_incident_and_learning",
+      "agent": "incident_commander",
+      "summary": "Mock analysis: Project: autonomous-dataops-agent\nCase: demo-001\nStage: record_incident_and_learning\nEvidence count: 1\nProduce concise, evidence-oriented analysis.",
+      "evidence": [
+        {
+          "source": "user_supplied",
+          "summary": "Example evidence placeholder",
+          "reference": "ev-1"
+        }
+      ],
+      "findings": [
+        "Mock-mode stage completed: record_incident_and_learning"
+      ],
+      "assumptions": [
+        "No external-system state was queried in mock mode."
+      ],
+      "alternatives_considered": [
+        "Defer action until real adapters supply more evidence."
+      ],
+      "rationale": "Validated input was processed without external mutation.",
+      "risk": {
+        "severity": "LOW",
+        "probability": 0.1,
+        "impact_areas": [
+          "development"
+        ],
+        "mitigations": [
+          "Dry-run mode and provider-neutral mock execution."
+        ],
+        "residual_risk": "External conditions are not represented in mock mode.",
+        "approval_required": false,
+        "confidence": 1.0
+      },
+      "usage": {
+        "provider": "mock",
+        "model": "mock-v1",
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "retry_count": 0
+      },
+      "completed_at": "2026-08-17T15:41:28.887905Z"
+    }
+  ],
+  "status": "COMPLETED",
+  "error": null
+}

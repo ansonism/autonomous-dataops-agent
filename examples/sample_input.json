@@ -1,0 +1,17 @@
+{
+  "case_id": "demo-001",
+  "title": "Starter demo for Autonomous DataOps Agent",
+  "description": "Coordinate specialized agents to reduce data-platform MTTR while preserving human control, change safety, evidence trails, idempotency, and rollback capability.",
+  "constraints": [
+    "Use mock provider",
+    "No external credentials",
+    "Dry-run only"
+  ],
+  "evidence": [
+    {
+      "id": "ev-1",
+      "type": "user_supplied",
+      "summary": "Example evidence placeholder"
+    }
+  ]
+}

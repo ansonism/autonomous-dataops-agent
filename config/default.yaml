@@ -1,0 +1,44 @@
+{
+  "app": {
+    "name": "autonomous-dataops-agent",
+    "environment": "local"
+  },
+  "provider": {
+    "name": "mock",
+    "model": "mock-v1",
+    "timeout_seconds": 30,
+    "max_retries": 2
+  },
+  "workflow": {
+    "stages": [
+      "observe_and_detect",
+      "triage_and_classify",
+      "diagnose_with_specialists",
+      "plan_remediation",
+      "verify_plan_and_simulate",
+      "risk_score_and_gate",
+      "request_human_approval",
+      "execute_via_controlled_adapter",
+      "validate_outcome",
+      "rollback_if_required",
+      "record_incident_and_learning"
+    ],
+    "checkpoint_each_stage": true,
+    "state_directory": "out/state"
+  },
+  "risk": {
+    "default_approval_threshold": "HIGH"
+  },
+  "approval": {
+    "mode": "manual",
+    "required_for_mutations": true
+  },
+  "observability": {
+    "log_level": "INFO",
+    "structured": true
+  },
+  "tools": {
+    "mode": "fake",
+    "allow_mutations": false
+  }
+}
